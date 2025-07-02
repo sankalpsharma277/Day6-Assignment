@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Prompt the user to enter marks
+        let marks = parseInt(prompt("Enter your marks (0 to 100):"));
+
+        // Validate input
+        if (isNaN(marks) || marks < 0 || marks > 100) {
+            alert("Please enter a valid number between 0 and 100.");
+        } else {
+            let grade;
+            let message;
+
+            // Determine grade using if-else
+            if (marks >= 90) {
+                grade = 'A';
+                message = 'Excellent!';
+            } else if (marks >= 75) {
+                grade = 'B';
+                message = 'Great job!';
+            } else if (marks >= 60) {
+                grade = 'C';
+                message = 'Good effort.';
+            } else if (marks >= 40) {
+                grade = 'D';
+                message = 'You passed.';
+            } else {
+                grade = 'F';
+                message = 'Better luck next time.';
+            }
+
+            // Output result using console
+            console.log(`Grade: ${grade} — ${message}`);
+            alert(`Grade: ${grade} — ${message}`);
+        }
+
+    </script>
+</body>
+
+</html>
