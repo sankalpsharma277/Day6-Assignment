@@ -9,11 +9,11 @@
 
 <body>
     <script>
-        // Prompt the user to enter marks
+        
         let marks = parseInt(prompt("Enter your marks (0 to 100):"));
 
-        // Validate input
-        if (isNaN(marks) || marks < 0 || marks > 100) {
+        
+        if ( marks < 0 || marks > 100) {
             alert("Please enter a valid number between 0 and 100.");
         } else {
             let grade;
@@ -37,9 +37,9 @@
                 message = 'Better luck next time.';
             }
 
-            // Output result using console
+            
             console.log(`Grade: ${grade} — ${message}`);
-            alert(`Grade: ${grade} — ${message}`);
+            
         }
 
     </script>
